@@ -13,13 +13,13 @@ let personas = [
     },
 ]
 
-const pasarAlturaCms = personas => {
-    // personas.altura *= 100;
-    return {
-        ...personas,
-        altura: personas.altura * 100
-    }
-}
+// Para que retorne un valor de debe colocar la funcion ({})
+const pasarAlturaCms = personas => ({
+    ...personas,
+    altura: personas.altura * 100
+})
+
+
 var personasCms = personas.map(pasarAlturaCms)
 
 console.log(personasCms);
